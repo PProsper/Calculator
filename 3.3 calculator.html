@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html style="background-image: url(pattern1.png); background-size: cover; width: 100%; height: 100%;">
+<head>
+	<title>Calculator</title>
+<style type="text/css">
+#box{
+	position: absolute;
+	background-color: rgba(255, 0, 0, 0.09);
+	width: 27em;
+	height: 15.5em;
+	margin-top:74.55%;
+	margin-left: 51%;
+	padding: 15px; 
+}
+#cal{
+	position: center;
+	position: absolute;
+  	left: 52%;
+  	right:50%;
+  	top: 127.5%;
+  	z-index: 2;
+ 	}
+table {
+    margin: 10px;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+td {
+	text-align:center;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.2);
+    color: white;
+    /*border: 8px solid #C40043;*/
+    margin-left: 55px;
+	margin-right: 5px;
+	margin-top:10px;:
+}​
+ #pad{
+ 	display:inline-block;
+ 	}
+.numbers{
+    	width:10%;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top:10px;:
+		margin-bottom:10px;
+		padding: 10px;
+		background-color:/*#C40043*/ #DAA520 ; 
+		border:1%; 
+		border-color: red; 
+		font-size: 15px; 
+		font-weight: bold;
+		display:inline-block;
+	}
+.numbers:hover{
+		background-color: #E0FFFF;
+		}
+</style>
+</head>
+<header>
+</header>
+<center><body>
+<div id="box">
+</div>
+<div id="bag">
+	<img src="dvfbag.gif" width="2000"; height="2000";>
+</div>
+<div>
+<div id="cal" style="display:inline;">
+<FORM NAME="Calc" style="">
+<TABLE style=" /*background-color: black; border-color: #C40043;*/ width: 26em; height: 17.6em;" >
+<center><TD>
+<div class="pad">
+	<INPUT class="numbers" TYPE="button" NAME="clear"  VALUE="  c  "  OnClick="Calc.Input.value= ''"> 
+	<INPUT class="numbers" TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'"> 
+	<INPUT class="numbers" TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+	<INPUT class="numbers" TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'"> 
+</div>
+<div class="pad">
+	<INPUT class="numbers" TYPE="button" NAME="four"  VALUE="  4  " OnCLick="Calc.Input.value += '4'">
+	<INPUT class="numbers" TYPE="button" NAME="five"  VALUE="  5  " OnClick="Calc.Input.value += '5'"> 
+	<INPUT class="numbers" TYPE="button" NAME="six"   VALUE="  6  " OnCLick="Calc.Input.value += '6'">
+	<INPUT class="numbers" TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'"> 
+</div>
+<div class="pad">
+	<INPUT class="numbers" TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+	<INPUT class="numbers" TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'"> 
+	<INPUT class="numbers" TYPE="button" NAME="ten"   VALUE="  0  " OnCLick="Calc.Input.value += '0'">
+	<INPUT class="numbers"TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">	
+</div>
+<div class="pad">
+	<INPUT class="numbers" TYPE="button" NAME="plus"  VALUE="  -  " OnClick="Calc.Input.value += ' - '">
+	<INPUT class="numbers" TYPE="button" NAME="plus"  VALUE="  x  " OnClick="Calc.Input.value += ' * '">
+	<INPUT class="numbers" TYPE="button" NAME="plus"  VALUE=" &#247; " OnClick="Calc.Input.value += ' / '">
+	<INPUT class="numbers" TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+</div>
+</TR>
+<TD></center>
+<center> <INPUT TYPE="text" NAME="Input"  border=solid border=1% style="border-color:red; width:23em; height: 2.5em; font-size: 13px; font-weight: bold; color:#C40043; ">
+</TR>
+</TD>
+</div>
+</div>
+</center>
+<script type="text/javascript">
+	var a,b,results,clear;
+	function setValues()
+	{
+		a =Number(document.getElementById("a").value);
+		b =Number(document.getElementById("b").value);
+
+	}
+function AllClear()         
+ {Current = "c";
+   document.Calculator.Display.value = Current;
+ }
+function sum()
+	{ 
+	setValues(); 
+	results = a+b; 
+	display("the sum is equaled to " + results);
+	}
+function subtract()
+	{ 
+	setValues(); 
+	results = a-b; 
+	display("the sum is equaled to " + results);
+	}
+function multiply()
+	{ 
+	setValues(); 
+	results = a*b; 
+	display("the multiple is equaled to " + results);
+	}
+function divide()
+	{ 
+	setValues(); 
+	results = a/b; 
+	display("the half is equaled to " + results);
+	}
+ </script>
+</TD>
+</TR>
+</TABLE>
+</FORM>
+
+</body></center>
+</html>
