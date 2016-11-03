@@ -5,7 +5,7 @@
 <style type="text/css">
 #box{
 	position: absolute;
-	background-color: rgba(255, 0, 0, 0.09);
+	background-color: rgba(255, 0, 0, 0.1);
 	width: 27em;
 	height: 15.5em;
 	margin-top:74.55%;
@@ -17,13 +17,19 @@
 	position: absolute;
   	left: 52%;
   	right:50%;
-  	top: 127.5%;
+  	top: 127.9%;
   	z-index: 2;
  	}
-table {
+#tab{
     margin: 10px;
-    border-collapse: separate;
+ 
     border-spacing: 0px;
+    border-left:solid -0px;
+    border-right:solid 0pt;
+    border-top:solid 1pt;
+    border-bottom:solid 1pt;
+    border-color: /*#C40043*/ #992135; 
+    box-shadow: -12px 0px 40px 2px /*#808080*/ #992135;
 }
 td {
 	text-align:center;
@@ -33,7 +39,7 @@ td {
     /*border: 8px solid #C40043;*/
     margin-left: 55px;
 	margin-right: 5px;
-	margin-top:10px;:
+	margin-top:10px;
 }​
  #pad{
  	display:inline-block;
@@ -44,7 +50,7 @@ td {
 		margin-right: 20px;
 		margin-top:10px;:
 		margin-bottom:10px;
-		padding: 10px;
+		padding: 5px;
 		background-color:/*#C40043*/ #DAA520 ; 
 		border:1%; 
 		border-color: red; 
@@ -68,7 +74,7 @@ td {
 <div>
 <div id="cal" style="display:inline;">
 <FORM NAME="Calc" style="">
-<TABLE style=" /*background-color: black; border-color: #C40043;*/ width: 26em; height: 17.6em;" >
+<TABLE id="tab"  style="width: 25em; height: 17.5em;" >
 <center><TD>
 <div class="pad">
 	<INPUT class="numbers" TYPE="button" NAME="clear"  VALUE="  c  "  OnClick="Calc.Input.value= ''"> 
